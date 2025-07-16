@@ -1,0 +1,22 @@
+Description:
+This project focuses on cleaning and preparing a real-world dataset of global layoffs from 2020 to 2023 using SQL. The dataset, which included company layoffs across various industries and countries, required multiple stages of transformation to ensure data quality and consistency.
+
+Key Tasks and Techniques:
+Duplicate Removal: Identified and removed duplicate rows using ROW_NUMBER() and CTEs to ensure data accuracy.
+
+Data Standardization: Standardized inconsistent text values (e.g., company names, industries, and country names) using string functions like TRIM() and LIKE.
+
+Date Formatting: Converted string-based date fields into proper DATE format using STR_TO_DATE().
+
+Null and Missing Value Handling: Cleaned incomplete entries by filling missing values based on related records and removed records with insufficient data.
+
+Schema Modification: Dropped helper columns (e.g., row_num) after use to maintain a clean dataset structure.
+
+Tools Used:
+MySQL
+
+Window Functions
+
+CTEs (Common Table Expressions)
+
+Data transformation SQL functions
